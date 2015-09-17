@@ -1,0 +1,24 @@
+Story: Library
+    As a library user
+    In order to borrow a book
+	I want librarian to give me that book
+    So that I can take it home
+
+    Scenario: lend an existing book from the library
+        Given 'Animal Farm' book in the library
+           And a pretty librarian.
+        When this book is borrowed from the library
+           And the librarian is blinking at you
+        Then the library doesn't contain it anymore, you have it
+           And the librarian wants to go out with you
+           But you're already married, so no way.
+
+    Scenario: not lend a nonexisting book from the library
+        Given empty library
+        When we try to borrow 'Children from Bullerbyn' from the library
+        Then the library doesn't let it to be borrowed.
+
+    Scenario: accept back a book previously borrowed
+        Given 'Children from Bullerbyn' has been borrowed from the library
+        When this book is given back
+        Then the library contains it.

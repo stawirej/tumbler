@@ -1,0 +1,1 @@
+"c:\Program Files\Java\jdk1.6.0_45\bin\java.exe" -cp "c:\Documents and Settings\stawirej\.m2\repository\pl\pragmatists\tumbler\tumbler\0.4.1\tumbler-0.4.1.jar"  tumbler.ScenarioToJavaConverter %1

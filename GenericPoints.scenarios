@@ -1,0 +1,10 @@
+Story: Generic points
+    As a backend user
+	I want to be able to operate on generic point features
+    So that external components can use it.
+
+    Scenario: Should create any element without cascading
+        Given non abstract feature to create request 
+			And new transaction 
+			And new cascade edit option.
+        When create generic point feature.
